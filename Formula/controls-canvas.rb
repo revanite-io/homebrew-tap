@@ -5,21 +5,21 @@
 class ControlsCanvas < Formula
   desc "A terminal-based UI tool for interactively selecting and managing cloud security controls"
   homepage "https://github.com/revanite-io/controls-canvas"
-  version "0.0.4"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/revanite-io/controls-canvas/releases/download/v0.0.4/controls-canvas_Darwin_x86_64.tar.gz"
-      sha256 "706998f1980972d7caaac0c3d2d1b7abd32c685048566855fa22083814c60726"
+      url "https://github.com/revanite-io/controls-canvas/releases/download/v0.1.0/controls-canvas_Darwin_x86_64.tar.gz"
+      sha256 "bee074d4af92a7283b50b9e87dee62ef2f8106760609e31b9332611f243c01a8"
 
       def install
         bin.install "controls-canvas"
       end
     end
     on_arm do
-      url "https://github.com/revanite-io/controls-canvas/releases/download/v0.0.4/controls-canvas_Darwin_arm64.tar.gz"
-      sha256 "73cbd729af482c1076416d0790043191bbeefdb634f31edc4e2d395865156898"
+      url "https://github.com/revanite-io/controls-canvas/releases/download/v0.1.0/controls-canvas_Darwin_arm64.tar.gz"
+      sha256 "3607db572eb58f4f53329ac66a90732e1c9875f41e10702c22952ed7873b6f18"
 
       def install
         bin.install "controls-canvas"
@@ -30,8 +30,8 @@ class ControlsCanvas < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/revanite-io/controls-canvas/releases/download/v0.0.4/controls-canvas_Linux_x86_64.tar.gz"
-        sha256 "2636ed97df695d409c8bc4757bbbeb626e01b64bd8342dfaa4e75bf6df65273e"
+        url "https://github.com/revanite-io/controls-canvas/releases/download/v0.1.0/controls-canvas_Linux_x86_64.tar.gz"
+        sha256 "11662e6a77d0ffed69a642672449abaa98a5034b72623438dea7081b42af5395"
 
         def install
           bin.install "controls-canvas"
@@ -40,8 +40,8 @@ class ControlsCanvas < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/revanite-io/controls-canvas/releases/download/v0.0.4/controls-canvas_Linux_arm64.tar.gz"
-        sha256 "69b0cc15429880f4e1adb7bf9d080797faed23d16d4591bfe7ecb6c5d928316e"
+        url "https://github.com/revanite-io/controls-canvas/releases/download/v0.1.0/controls-canvas_Linux_arm64.tar.gz"
+        sha256 "9b40c956ae8431f61dc1a5c471015b349bb3e3ce4958d6869a6f0423cef023e0"
 
         def install
           bin.install "controls-canvas"
